@@ -14,7 +14,17 @@ router.get('/', function (req, res) {
 
 // define the about route
 router.get('/about', function (req, res) {
-  res.send('all about work')
+  res.render('index', {
+    title:'about', 
+    message:'this is me'
+  });
+})
+
+// define the about route
+router.get('/sailing', function (req, res) {
+  res.render('home', {
+    title: 'Welcome'
+  });
 })
 
 module.exports = router
