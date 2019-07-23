@@ -22,8 +22,9 @@ router.get('/about', function (req, res) {
 
 // define the about route
 router.get('/sailing', function (req, res) {
-  res.render('home', {
-    title: 'Welcome'
+  res.render('index', {
+    title: 'Welcome',
+    message: 'this is sailing traking'
   });
 })
 
